@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset ="UTF-8">
+        <title>Calculadora3000</title>
+    </head>
+    
+    <body>
+        <h1>Calculadora 3000</h1>
+        <h3>Insira números na caixa abaixo</h3>
+        <form action="calculos_calculadora.php" method="post">
+            <input type="number" name="x" />
+            <br>
+            <input type="number" name="y"/>
+            <br>
+            <select name="Cálculo">
+                <option value="sum">Adição</option>
+
+                <option value="dif">Subtração</option>
+
+                <option value="multi">Multiplicação</option>
+
+                <option value="div">Divisão</option>
+            </select>
+
+            <input type="submit" value="Inserir">
+        </form>
+    </body>
+</html>
