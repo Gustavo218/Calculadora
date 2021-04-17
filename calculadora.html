@@ -1,29 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset ="UTF-8">
-        <title>Calculadora3000</title>
+        <title>CalculadoraPHP</title>
     </head>
     
     <body>
-        <h1>Calculadora 3000</h1>
-        <h3>Insira números na caixa abaixo</h3>
-        <form action="calculos_calculadora.php" method="post">
-            <input type="number" name="x" />
+        <h1>Calculadora PHP</h1>
+        <h3>Insira números nas caixas abaixo</h3>
+        <form action="calculos_calculadora.php" method="POST">
+            <input type="number" name="x" placeholder="Número 1">
             <br>
-            <input type="number" name="y"/>
+            <br>
+            <input type="number" name="y" placeholder="Número 2">
+            <br>
             <br>
             <select name="Cálculo">
-                <option value="sum">Adição</option>
+                <option value="sum">+</option>
 
-                <option value="dif">Subtração</option>
+                <option value="dif">-</option>
 
-                <option value="multi">Multiplicação</option>
+                <option value="multi">x</option>
 
-                <option value="div">Divisão</option>
+                <option value="div">÷</option>
             </select>
-
-            <input type="submit" value="Inserir">
+            <br>
+            <br>
+            <input type="submit" value="Calcular">
         </form>
+        <br>
+        <h3>A resposta é: </h3>
     </body>
 </html>
